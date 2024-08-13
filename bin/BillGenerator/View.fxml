@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="537.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillGenerator.ViewController">
+   <children>
+      <Label layoutX="199.0" layoutY="23.0" text="Bill Generator" textFill="#8aaae5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="82.0" text="Customer Mobile No." />
+      <ComboBox fx:id="comboMobile" layoutX="55.0" layoutY="100.0" prefHeight="26.0" prefWidth="262.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="55.0" layoutY="152.0" text="Papers" />
+      <TextField fx:id="txtPapers" layoutX="55.0" layoutY="170.0" prefHeight="26.0" prefWidth="339.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="55.0" layoutY="209.0" text="Prices" />
+      <TextField fx:id="txtPrices" layoutX="55.0" layoutY="230.0" prefHeight="26.0" prefWidth="203.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Button layoutX="350.0" layoutY="100.0" mnemonicParsing="false" onAction="#doFetch" text="Fetch" />
+      <Label layoutX="55.0" layoutY="281.0" text="Last Billing Date" />
+      <DatePicker fx:id="lbd" layoutX="55.0" layoutY="299.0" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="278.0" layoutY="281.0" text="Bill Upto" />
+      <DatePicker fx:id="bdu" layoutX="291.0" layoutY="299.0" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="57.0" layoutY="350.0" text="Missing Days" />
+      <TextField fx:id="txtMissing" layoutX="52.0" layoutY="368.0" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <TextField fx:id="txtBill" layoutX="271.0" layoutY="368.0" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="270.0" layoutY="350.0" text="Total Bill Amount" />
+      <Button layoutX="155.0" layoutY="418.0" mnemonicParsing="false" onAction="#doGenerate" text="Generate Bill And Save" />
+      <TextField fx:id="txtTotal" layoutX="278.0" layoutY="230.0" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="280.0" layoutY="209.0" text="Total" />
+      <Button layoutX="183.0" layoutY="299.0" mnemonicParsing="false" onAction="#doLastDate" text=" Bill From" />
+      <ImageView fitHeight="140.0" fitWidth="118.0" layoutX="409.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="114.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1200x600wa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="22.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Mobile-Icon-PNG-300x300.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="14.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="22.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2485389.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="27.0" layoutX="255.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@appointment-date-icon-free-vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="14.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@appointment-date-icon-free-vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="136.0" layoutX="326.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(4).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

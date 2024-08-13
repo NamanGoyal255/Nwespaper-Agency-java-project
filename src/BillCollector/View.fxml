@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="502.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillCollector.ViewController">
+   <children>
+      <Label layoutX="179.0" layoutY="14.0" text="Bill Collector" textFill="#8aaae5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="108.0" text="Mobile Number" />
+      <Button layoutX="178.0" layoutY="143.0" mnemonicParsing="false" onAction="#doBill" text="Bill Details" />
+      <Label layoutX="55.0" layoutY="210.0" text="Amount" />
+      <TextField fx:id="txtAmount" layoutX="129.0" layoutY="206.0" prefHeight="26.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="55.0" layoutY="250.0" text="Date From" />
+      <DatePicker fx:id="dos" layoutX="127.0" layoutY="246.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <DatePicker fx:id="doe" layoutX="129.0" layoutY="281.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <Label layoutX="55.0" layoutY="285.0" text="Date Upto" />
+      <Button layoutX="167.0" layoutY="318.0" mnemonicParsing="false" onAction="#doPayment" text="Payment Done" />
+      <Label fx:id="lblFinal" layoutX="189.0" layoutY="359.0" prefHeight="18.0" prefWidth="94.0" text="Final" />
+      <Separator layoutX="4.0" layoutY="183.0" prefHeight="1.0" prefWidth="502.0" />
+      <TextField fx:id="txtMobile" layoutX="153.0" layoutY="104.0" style="-fx-background-color: white; -fx-border-color: #8AAAE5; -fx-border-width: 2;" />
+      <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="21.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="21.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="21.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2485389.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="129.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="21.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Mobile-Icon-PNG-300x300.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="55.0" layoutX="129.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@586-5867412_invoice-transparent-images-png-bill-payment-icon-transparent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="175.0" layoutX="324.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="84.0" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
